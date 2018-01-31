@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MasterPass</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password </string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="Please_fill_All_Empty_Field">Please fill All Empty Space</string>
+    <string name="Successfully_Paid">Login Successful</string>
+    <string name="Successfully_paid">Successfully_paid</string>
+
+    <string-array name="titles">
+        <item>Scan from Camera</item>
+        <item>Upload from Gallery</item>
+        <item>Pay Merchant</item>
+    </string-array>
+    <string name="title_activity_upload">UploadActivity</string>
+    <string name="LoginSuccessful">Login Successful</string>
+    <string name="LoginFailed">Login failed. Try again !!!</string>
+    <string name="Login">Login</string>
+</resources>

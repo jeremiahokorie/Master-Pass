@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.crash.etranzact.masterpass.MainActivity">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="0">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="308dp"
+                android:layout_height="250dp"
+                android:layout_marginBottom="50dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mstr"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/etEmail"
+                android:layout_width="310dp"
+                android:layout_height="62dp"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:saveEnabled="true"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp">
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="315dp"
+                android:layout_height="56dp"
+                android:layout_margin="8dp"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:saveEnabled="false"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="@android:color/black" />
+
+            <!--<com.dd.CircularProgressButton-->
+                <!--android:id="@+id/btnLogin"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="16dp"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="18sp"-->
+                <!--app:cpb_textComplete="Complete"-->
+                <!--app:cpb_textError="Error"-->
+                <!--app:cpb_textIdle="Login" />-->
+
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/Button"
+                android:text="@string/action_sign_in"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+            <!-- Login progress -->
+            <ProgressBar
+                android:id="@+id/login_progress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
